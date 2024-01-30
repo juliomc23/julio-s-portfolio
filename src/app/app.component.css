@@ -1,0 +1,15 @@
+:host {
+  display: block;
+  height: 100dvh;
+}
+
+.custom-container {
+  background-color: #00021a;
+  top: 0;
+  height: 100%;
+  background-image: radial-gradient(
+    ellipse 80% 80% at 50% -20%,
+    rgba(120, 119, 198, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+}

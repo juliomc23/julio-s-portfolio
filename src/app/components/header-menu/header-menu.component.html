@@ -1,0 +1,15 @@
+<dialog
+  [open]="$openedHeaderMenu"
+  class="nav-dialog"
+  [ngClass]="$openedHeaderMenu ? 'opened-dialog' : 'closed-dialog'"
+>
+  <nav class="nav">
+    <a routerLink="/home" class="nav__link">Home</a>
+    <a routerLink="/about" class="nav__link">Projects</a>
+    <a routerLink="/blog" class="nav__link">Skills</a>
+    <a routerLink="/contact" class="nav__link">Contact</a>
+  </nav>
+  <button (click)="closeHeaderMenu()" class="close__menu-button">
+    <mat-icon class="mat-icon-close">close</mat-icon>
+  </button>
+</dialog>
