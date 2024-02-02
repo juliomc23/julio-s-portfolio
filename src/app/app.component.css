@@ -1,15 +1,18 @@
 :host {
-  display: block;
+  display: flex;
+  flex-direction: column;
   height: 100dvh;
-}
-
-.custom-container {
-  background-color: #00021a;
-  top: 0;
-  height: 100%;
+  background-color: #363062;
   background-image: radial-gradient(
     ellipse 80% 80% at 50% -20%,
-    rgba(120, 119, 198, 0.3),
+    rgb(120, 119, 198),
     rgba(255, 255, 255, 0)
   );
+}
+
+.main {
+  height: 100%;
+  margin-top: 2rem;
+  overflow-y: auto;
+  margin-bottom: 1rem;
 }

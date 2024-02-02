@@ -1,0 +1,50 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+
+.profile_photo {
+  width: 12rem;
+  border-radius: 0.3rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.35rem;
+  margin: 0rem 1rem;
+
+  b {
+    color: var(--quaternary);
+  }
+}
+
+.contact__link {
+  color: var(--quaternary);
+  font-size: 1.35rem;
+  cursor: pointer;
+}
+
+.cv__link {
+  width: 100%;
+  background-color: var(--tertiary);
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 688px) {
+  .profile_photo {
+    margin-bottom: 2rem;
+  }
+}
